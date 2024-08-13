@@ -1,0 +1,345 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'popins',sans-serif; /* type of font */
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 10000000000000000000;
+}
+nav .logo {
+    width: 160px;
+    margin-left: 45px;
+}
+nav .nav-left {
+    display: flex;
+    align-items: center;
+}
+.nav-left ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.search-box {
+    background: #efefef;
+    width: 350px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+.nav-user-icone img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-box input {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+.nav-user-icone {
+    margin-left: 20px;
+}
+.online {
+    position: relative;
+    
+}
+.online::after {
+    content: ' ';
+    width: 7px;
+    height: 7px;
+    border:2px solid #fff;
+    border-radius: 50%;
+    background: green;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+.left-sideBar{
+    flex-basis: 25%;/*  */
+    position: sticky;
+    top: 70;
+    align-self: flex-start;/*  */
+}
+
+.emp-links {
+    border-bottom: 1px solid #ccc;
+}
+
+.left-sideBar .emp-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: black;
+    width: fit-content;
+}
+
+.left-sideBar .emp-links a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.left-sideBar .emp-links a:last-child {
+    color: blue;
+}
+.shortcut-links a {
+text-decoration: none;
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+color: black;
+width: fit-content;
+}
+.shortcut-links a img {
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.shortcut-links p {
+    margin: 25px 0 ;
+    color: grey;
+    font-weight: 500;
+}
+.right-sideBar {
+    flex-basis: 25%;/*  */
+    position: sticky;
+    top: 70;
+    align-self: flex-start;/*  */
+    background-color: #F5F7F8;
+    padding: 20px;
+    border-radius: 5px;
+    color: grey;
+}
+.main-content {
+    flex-basis: 47%;
+}
+.sideBar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.sideBar-title h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+.sideBar-title a {
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
+}
+.event {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.left-event {
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 19px;
+}
+.left-event h3 {
+    margin-top: 13px;
+}
+.left-event span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: blue;
+    font-size: 12px;
+    color: white;
+}
+.right-event p {
+    font-size: 12px;
+}
+.right-event a {
+    text-decoration: none;
+    font-size: 12px;
+    color: blue;
+}
+.sidebar-ads {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.online-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.online-list .online img {
+    width: 40px;
+    border-radius: 50%;
+}
+.online-list .online {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.online-list .online::after {
+    top: unset;
+    bottom: 6px;
+}
+
+.story-gallary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.story-gallary .story {
+    flex-basis: 18%;
+    padding-top: 32%;
+    position: relative;
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.5)),url(../images/status-1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.story-gallary .story img {
+    position: absolute;
+    width: 54px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border: 2px solid blue;
+}
+.story-gallary .story p {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+
+}
+.story-gallary .story1 {
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.5)),url(../images/member-1.png);
+}
+.story-gallary .story2 {
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.5)),url(../images/member-2.png);
+
+}
+.story-gallary .story3 {
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.5)),url(../images/member-3.png);
+
+}
+.story-gallary .story4 {
+    background-image: linear-gradient(transparent , rgba(0,0,0,0.5)),url(../images/member-4png);
+
+}
+.write-post {
+    width: 100%;
+    background: #efefef;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+ .user-profile {
+    display: flex;
+    align-items: center;
+
+}
+ .user-profile  img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+ .user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+.user-profile small {
+    font-size: 12px;
+}
+.post-input {
+    padding-left: 55px;
+    padding-top: 10px;
+}
+.post-input textarea {
+    width: 100%;
+    background: #efefef;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #cccc;
+    resize: none;
+}
+.add-post-links {
+    display: flex;
+    margin-top: 10px;
+
+}
+.add-post-links a {
+    text-decoration: none;
+    display:flex ;
+    align-items: center;
+    color: #626262;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.add-post-links a img {
+    width: 20px;
+    margin-right: 10px;
+}
+.posting {
+    width: 100%;
+    background-color: #efefef;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+.posting p {
+    margin-top: 10px;
+    color: black;
+    margin-bottom: 10px;
+
+}
+.com-shere-like {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.com-shere-like  .icons div img {
+    width: 18px;
+    margin-right: 10px;
+}
+.com-shere-like  .icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 67px;
+    margin-top: 20px;
+    font-size: 16px;
+}
